@@ -1,0 +1,38 @@
+body{font-size: 16px;}
+@font8px: 0.500rem;
+@font9px: 0.563rem;
+@font10px: 0.625rem;
+@font11px: 0.688rem;
+@font12px: 0.750rem;
+@font13px: 0.813rem;
+@font14px: 0.875rem;
+@font15px: 0.938rem;
+@font16px: 1.000rem;
+@font17px: 1.063rem;
+@font18px: 1.125rem;
+@font19px: 1.188rem;
+@font20px: 1.250rem;
+@font21px: 1.313rem;
+@font22px: 1.375rem;
+@font23px: 1.438rem;
+@font24px: 1.500rem;
+@font26px: 1.625rem;
+@font28px: 1.750rem;
+@font30px: 1.875rem;
+@font34px: 2.125rem;
+@font36px: 2.250rem;
+
+
+	
+.loop (0) {}
+
+.loop (@index) when (@index > 0) {
+  .fontsize-@{index} {
+    font-size: @index * 0.06250rem !important;
+  }
+  .loop (@index - 1);
+}	
+
+ 
+  .loop(40);
+	

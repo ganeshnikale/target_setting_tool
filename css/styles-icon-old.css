@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "target-tool-icons";
+  src:url("fonts/target-tool-icons.eot");
+  src:url("fonts/target-tool-icons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/target-tool-icons.woff") format("woff"),
+    url("fonts/target-tool-icons.ttf") format("truetype"),
+    url("fonts/target-tool-icons.svg#target-tool-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "target-tool-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "target-tool-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-archive:before {
+  content: "\61";
+}
+.icon-arrow-1:before {
+  content: "\62";
+}
+.icon-comment:before {
+  content: "\63";
+}
+.icon-export-excel:before {
+  content: "\64";
+}
+.icon-financial-docs:before {
+  content: "\65";
+}
+.icon-flag:before {
+  content: "\66";
+}
+.icon-follow-up:before {
+  content: "\67";
+}
+.icon-import-excel:before {
+  content: "\68";
+}
+.icon-info:before {
+  content: "\69";
+}
+.icon-notification:before {
+  content: "\6a";
+}
+.icon-parameter-report:before {
+  content: "\6b";
+}
+.icon-redo:before {
+  content: "\6c";
+}
+.icon-region-overview:before {
+  content: "\6d";
+}
+.icon-zone-overview:before {
+  content: "\6e";
+}
+.icon-validation:before {
+  content: "\6f";
+}
+.icon-undo:before {
+  content: "\70";
+}
+.icon-target-summary:before {
+  content: "\71";
+}
+.icon-reset:before {
+  content: "\72";
+}
+.icon-represent-my-zone:before {
+  content: "\73";
+}

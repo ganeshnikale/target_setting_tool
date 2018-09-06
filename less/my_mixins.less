@@ -1,0 +1,49 @@
+/* Mixin */
+
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px,@spred:0px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur @spred rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur @spred rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur @spred rgba(0, 0, 0, @alpha);
+}
+
+.transition (@prop: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
+
+.transform (@rotate: 90deg) {
+	-webkit-transform: rotate(@rotate);
+	-moz-transform: rotate(@rotate);
+	-o-transform: rotate(@rotate);
+	-ms-transform: rotate(@rotate);
+	transform: rotate(@rotate) ;
+}
+
+.border(@width:1px, @style: solid, @color: #e1e1e1){
+	border: @width @style @color;
+	}
+.opacity(@opacity) {
+  @mfopacity: @opacity*100;
+  @fopacity: "alpha(opacity=@{mfopacity})";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{mfopacity})";
+  filter: ~"@{fopacity}";
+  -webkit-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
+}	
