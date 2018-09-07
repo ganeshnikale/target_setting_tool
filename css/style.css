@@ -429,7 +429,7 @@ main {
   margin-left: 8%;
 }
 main.bottom_spacer {
-  padding-bottom: 40px;
+  padding-bottom: 73px;
 }
 main.bottom_spacer.main_full {
   margin: 0;
@@ -932,6 +932,7 @@ ul.legends .dark_green:before {
 }
 .tbl_slider .table.tbl_transform.slider_tbl {
   width: 2060px;
+  table-layout: fixed;
 }
 .tbl_slider .table.tbl_transform.slider_tbl thead th {
   z-index: 999 !important;
@@ -959,6 +960,9 @@ ul.legends .dark_green:before {
   -ms-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
+.tbl_slider .table.tbl_transform.slider_tbl tbody tr td {
+  padding: 0 10px;
+}
 .tbl_slider .table.tbl_transform.slider_tbl tbody tr td .form-group {
   margin-bottom: 0;
 }
@@ -967,6 +971,9 @@ ul.legends .dark_green:before {
   margin-bottom: 0;
   font-size: 0.625rem;
   font-weight: normal;
+  padding: 0px 10px;
+  height: 30px;
+  margin: 5px 0;
 }
 .card_dfl {
   -webkit-border-radius: 10px;
@@ -1196,13 +1203,14 @@ ul.legends .dark_green:before {
 .sticky-table table td.sticky-cell-opposite.action_icons {
   outline: transparent;
   font-size: 20px;
+  width: 90px;
 }
 .sticky-table table td.sticky-cell-opposite.action_icons a:hover {
   text-decoration: none;
 }
 .sticky-table table td.sticky-cell-opposite.action_icons .icon-comment {
   color: #ff5200;
-  margin: 0 10px 0 0px;
+  margin: 0px;
 }
 .sticky-table table td.sticky-cell-opposite.action_icons .icon-info {
   color: #c3a279;
@@ -1378,6 +1386,7 @@ ul.count li .count_number {
 }
 a.icons_nav {
   text-decoration: none;
+  vertical-align: middle;
 }
 a.icons_nav:hover,
 a.icons_nav:focus {
