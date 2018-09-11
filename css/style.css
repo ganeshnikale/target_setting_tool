@@ -277,6 +277,11 @@ body {
   padding: 5px 20px;
   background: #ff5200;
 }
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
 body {
   background: url("../images/body_bg.jpg");
   font-family: 'latoblack';
@@ -913,7 +918,7 @@ ul.legends .dark_green:before {
   color: #ff5200;
 }
 .table.tbl_transform .tbl_zone_name .checkbox input[type="checkbox"] {
-  margin-top: 8px;
+  margin-top: 0;
 }
 .table.tbl_transform .tbl_zone_name .checkbox label {
   font-size: 0.625rem;

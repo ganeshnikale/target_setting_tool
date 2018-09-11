@@ -5,6 +5,10 @@
 @import "my_mixins.less";
 @import "typo.less";
 @import "my_buttons.less";
+html, body {
+    	height: 100%;
+		margin: 0px;
+	}
 body {
     background: url("@{images_url}/body_bg.jpg");
     font-family: 'latoblack';
@@ -609,7 +613,7 @@ ul.legends {
             color: @orange;
         }
         .checkbox input[type="checkbox"] {
-            margin-top: 8px;
+            margin-top: 0;
         }
         .checkbox label {
             font-size: @font10px;

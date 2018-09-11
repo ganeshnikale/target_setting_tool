@@ -82,4 +82,29 @@ $('.close_btn').click(function(){
 
 });
 
+function resize(){
+	var height = $( window ).height();
+	
+
+	if( height > 750){
+	var tbl_height = height*50/100;
+	// console.log('sdf');
+	// console.log(tbl_height);
+	console.log(0);
+	} else {
+		var tbl_height = height*40/100;
+	console.log(1);
+	}
+	$('.tbl_slider').css('height',tbl_height+'px');
+	$('main').css('height', height+'px');
+}
+
+resize();
+
+
+$( window ).resize(function() {
+  resize();
+});
+
+
 });
